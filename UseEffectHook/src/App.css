@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffeded;
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  text-align: center;
+  background: rgb(252, 249, 234);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #081420;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+button:active {
+  background-color: #004080;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+}
+
+.start {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.stop {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 5;
+    transform: translateY(-110px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
